@@ -1,1 +1,9 @@
 /* Application styles */
+
+header {
+  background-image: url("logo.svg");
+  background-repeat: no-repeat;
+  padding-left: 6rem;
+  height: 5rem;
+  line-height: 5rem;
+}
