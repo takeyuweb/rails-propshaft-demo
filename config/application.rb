@@ -33,5 +33,12 @@ module PropshaftDemo
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    initializer "propshaft.append_assets_path" do
+      config.assets.paths += [
+        Rails.root.join("lib", "assets"),
+        Rails.root.join("vendor", "assets")
+      ]
+    end
   end
 end
